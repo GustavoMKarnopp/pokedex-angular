@@ -8,6 +8,9 @@ import { RoutingPageModule } from './routing-pages.module';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 
+//Shared
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -15,7 +18,8 @@ import { DetailsComponent } from './details/details.component';
   ],
   imports: [
     CommonModule,
-    RoutingPageModule
+    RoutingPageModule,
+    SharedModule
   ]
 })
 export class PagesModule { }

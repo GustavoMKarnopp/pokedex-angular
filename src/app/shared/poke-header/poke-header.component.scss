@@ -1,0 +1,13 @@
+@import '../../../config-scss/rem-calc.scss';
+
+/*O Host irá nos especificar que só estamos mexendo dentro desse componente para que quando tivermos o mesmo id ou classe ele nao atrapalhe e de conflito. */
+/*Por exemplo se utilizaros o header dentro do Host ele ira entender que ele é somente desse componente e nao e outro evitando assim pegar imformações de outro lugar*/
+:host{
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: rem-calc(40) 0;
+  }
+}

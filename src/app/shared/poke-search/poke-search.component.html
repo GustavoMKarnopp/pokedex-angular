@@ -1,4 +1,5 @@
 <form>
-  <input type="text" placeholder="Buscar Pokemon...">
+  <!-- #input FAZ PEGAR O ID DO INPUT -->
+  <input type="text" #input (keyup)="search(input.value)" placeholder="Buscar Pokemon...">
   <img src="assets/search/search.svg" alt="Buscar Pokemon">
 </form>
